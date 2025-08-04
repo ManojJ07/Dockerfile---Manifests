@@ -1,0 +1,10 @@
+apiVersion: v1 # This specifies the API version of the Kubernetes object
+kind: Pod # This defines a Pod in Kubernetes
+metadata:
+  name: sample-pod # This is the name of the pod
+spec:
+  containers:
+  - name: cart-app # This is the name of the container
+    image: muralisocial123/cart-page-example:1.0 # This is the docker image used for the container
+    ports:
+    - containerPort: 3000 # This specifies the port that the container listens on
