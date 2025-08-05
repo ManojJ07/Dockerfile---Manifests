@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: c-1 # Name of the container
-          image: muralisocial123/netflix-app-1:latest # Image for the container
+          image: muralisocial123/apache-web-app:latest # Image for the container
           ports:
             - containerPort: 80 # Port exposed by the container
