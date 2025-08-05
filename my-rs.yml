@@ -3,7 +3,7 @@ kind: ReplicaSet # Kind of the resource
 metadata:
   name: my-rs # Name of the ReplicaSet
 spec:
-  replicas: 10 # Number of desired pods
+  replicas: 5 # Number of desired pods
   selector:
     matchLabels:
       app: my-app # Label selector to match pods
