@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment # Kind of the resource
+metadata:
+  name: netflix-deployment # Name of the Deployment
+  namespace: mj-ns # Namespace for the Deployment
+spec:
+  replicas: 5 # Number of replicas
+  selector: 
+    matchLabels:
+      app: netflix # Label selector to match pods
+  template:
+    metadata:
+      labels:
+        app: netflix # Labels for the pods
+    spec: 
+      containers:
+        - name: c-1 # Name of the container
+          image: muralisocial123/netflix-25.v1:latest # Image for the container
+          ports:
+            - containerPort: 80 # Port exposed by the container
